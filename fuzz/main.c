@@ -6,7 +6,7 @@ cp -r data temp
 
 */
 #define CGLTF_IMPLEMENTATION
-#include "../cgltf.h"
+#include "cgltf.h"
 
 int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size)
 {
