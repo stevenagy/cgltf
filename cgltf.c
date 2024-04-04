@@ -96,6 +96,7 @@
 
 #include <stddef.h>
 #include <stdint.h> /* For uint8_t, uint32_t */
+#include "cgltf.h"
 
 #ifdef __cplusplus
 extern "C" {
