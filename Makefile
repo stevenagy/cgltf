@@ -1,6 +1,6 @@
 all: clean
-	$(CC) $(CFLAGS) -g -Wall -Wextra -o cgltf.o -c -fPIC cgltf.c
-	$(CC) $(CFLAGS) -g -shared -o libcgltf.so cgltf.o
+	$(CC) $(CFLAGS) -g -fPIC -rdynamic -o cgltf.o -c cgltf.c 
+	$(CC) $(CFLAGS) -g -fPIC -rdynamic -shared -o libcgltf.so cgltf.o
 	ar rcs libcgltf.a cgltf.o
 
 ossfuzz: clean all
